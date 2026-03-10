@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎵 Theme Blind Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🎵 Theme Blind Test</h1>
+      <div id="score-board">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Song: <strong id="current-song-index">0</strong> / <strong id="total-songs">0</strong></span>
+      </div>
+    </header>
+
+    <!-- Theme Selection Screen -->
+    <div id="screen-theme-select" class="screen active">
+      <h2>Choose a Theme</h2>
+      <div id="theme-list"></div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="screen-game" class="screen">
+      <div id="theme-banner">
+        🎯 Theme: <span id="theme-name"></span>
+      </div>
+
+      <div id="player-area">
+        <div id="vinyl" class="vinyl stopped">🎵</div>
+        <audio id="audio-player" crossorigin="anonymous"></audio>
+        <div id="player-controls">
+          <button id="btn-play">▶ Play Preview</button>
+          <div id="progress-bar-wrapper">
+            <div id="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hint-area">
+        <p id="hint-text">🔎 Find a word related to: <strong id="hint-theme"></strong></p>
+      </div>
+
+      <div id="guess-area">
+        <input id="guess-input" type="text" placeholder="Type your guess..." autocomplete="off" />
+        <button id="btn-guess">Guess!</button>
+      </div>
+
+      <div id="feedback"></div>
+
+      <div id="revealed-answer" class="hidden">
+        <p>🎶 Song: <span id="answer-song"></span></p>
+        <p>🎤 Artist: <span id="answer-artist"></span></p>
+        <p>✅ Keyword: <span id="answer-keyword"></span></p>
+      </div>
+
+      <div id="game-controls">
+        <button id="btn-skip">Show</button>
+        <button id="btn-next" class="hidden">Next Song ➡</button>
+      </div>
+    </div>
+
+    <!-- End Screen -->
+    <div id="screen-end" class="screen">
+      <h2>🏁 Theme Complete!</h2>
+      <div id="theme-result">
+        <p>Theme <strong id="theme-score-name"></strong>: <strong id="theme-score"></strong></p>
+      </div>
+      <p>Total score: <strong id="final-score"></strong></p>
+      <button id="btn-restart">🎯 Choose Another Theme</button>
+    </div>
+  </div>
+
+  <script src="themes.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
