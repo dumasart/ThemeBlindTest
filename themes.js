@@ -22,6 +22,19 @@ const THEMES = [
     ]
   },
   {
+    id: "cinema_fr",
+    title: "Cinéma",
+    icon: "🎥",
+    description: "Musiques de films et séries célèbres",
+    songs: [
+      { title: "My Heart Will Go On", artist: "Celine Dion", keywords: ["titanic"], keywordsFr: [] },
+      { title: "Eye of the Tiger", artist: "Survivor", keywords: ["rocky"], keywordsFr: [] },
+      { title: "Circle of Life", artist: "Elton John", keywords: ["lion", "king"], keywordsFr: ["roi", "lion"] },
+      { title: "Ghostbusters", artist: "Ray Parker Jr.", keywords: ["ghostbusters"], keywordsFr: ["ghostbuster"] },
+      { title: "La Complainte de la Butte", artist: "Rufus Wainwright", keywords: ["moulin rouge", "montmartre"], keywordsFr: ["paris", "rouge", "moulin"] }
+    ]
+  },
+  {
     id: "days",
     title: "Days & Months",
     icon: "📅",
@@ -33,6 +46,20 @@ const THEMES = [
       { title: "Wednesday Morning, 3 A.M.", artist: "Simon & Garfunkel", keywords: ["wednesday"], keywordsFr: ["mercredi"] },
       { title: "Saturday Night Fever", artist: "Bee Gees", keywords: ["saturday"], keywordsFr: ["samedi"] },
       { title: "December Song", artist: "George Michael", keywords: ["december"], keywordsFr: ["decembre"] }
+    ]
+  },
+  {
+    id: "tv_series",
+    title: "Séries TV",
+    icon: "📺",
+    description: "Génériques et musiques de séries télévisées cultes",
+    songs: [
+      { title: "A Song of Ice and Fire", artist: "Ramin Djawadi", keywords: ["game of thrones"], keywordsFr: ["game", "thrones", "trone", "fer", "got"] },
+      { title: "CSI: Miami", artist: "KnightsBridge", keywords: ["csi", "miami"], keywordsFr: ["expert"] },
+      { title: "If I Had a Heart", artist: "Fever Ray", keywords: ["vikings"], keywordsFr: ["viking"] },
+      { title: "Dexter", artist: "Génériques De Séries Télé / TV", keywords: ["dexter"], keywordsFr: [] },
+      { title: "Paradise Circus", artist: "Massive Attack", keywords: ["luther", "idris elba"], keywordsFr: ["idris", "elba"] },
+      { title: "You Want It Darker", artist: "Leonard Cohen", keywords: ["peaky blinders", "shelby"], keywordsFr: ["peaky", "blinders"] }
     ]
   },
   {
@@ -48,6 +75,20 @@ const THEMES = [
     ]
   },
   {
+    id: "cinema2",
+    title: "Cinéma 2",
+    icon: "🎞️",
+    description: "Bandes originales de films cultes",
+    songs: [
+      { title: "Married Life", artist: "Michael Giacchino", keywords: ["up", "pixar"], keywordsFr: ["la haut"] },
+      { title: "Fly", artist: "Ludovico Einaudi", keywords: ["intouchables"], keywordsFr: ["intouchable"] },
+      { title: "Cornfield Chase", artist: "Hans Zimmer", keywords: ["interstellar"], keywordsFr: ["espace", "stellar"] },
+      { title: "He's a Pirate", artist: "Klaus Badelt", keywords: ["pirates", "caribbean", "jack sparrow"], keywordsFr: ["pirate", "caraibes"] },
+      { title: "Cinema Paradiso", artist: "Ennio Morricone", keywords: ["cinema", "paradiso", "Morricone"], keywordsFr: ["paradis"] },
+      { title: "Comptine d'un autre été", artist: "Yann Tiersen", keywords: ["amelie", "poulain", "fabuleux"], keywordsFr: ["amelie", "poulain", "montmartre"] }
+    ]
+  },
+  {
     id: "cities",
     title: "Cities",
     icon: "🏙️",
@@ -57,7 +98,8 @@ const THEMES = [
       { title: "Streets of Philadelphia", artist: "Bruce Springsteen", keywords: ["philadelphia"], keywordsFr: ["philadelphie"] },
       { title: "Viva Las Vegas", artist: "Elvis Presley", keywords: ["las vegas", "vegas"], keywordsFr: [] },
       { title: "London Calling", artist: "The Clash", keywords: ["london", "calling"], keywordsFr: ["londres"] },
-      { title: "Empire State of Mind", artist: "Jay-Z", keywords: ["york", "new york"], keywordsFr: [] }
+      { title: "Empire State of Mind", artist: "Jay-Z", keywords: ["york", "new york"], keywordsFr: [] },
+      { title: "Santiano", artist: "Hugues Aufray", keywords: ["san fransisco", "saint malo"], keywordsFr: ["saint", "malo", "san", "fransisco"] }
     ]
   },
   {
@@ -246,6 +288,18 @@ const THEMES = [
       { title: "Angry", artist: "The Rolling Stones", keywords: ["angry"], keywordsFr: ["enerve", "colere"] },
       { title: "Fear of the Dark", artist: "Iron Maiden", keywords: ["fear"], keywordsFr: ["peur", "appeure"] },
       { title: "Jealous Guy", artist: "John Lennon", keywords: ["jealous"], keywordsFr: ["jaloux"] }
+    ]
+  },
+  {
+    id: "nature",
+    title: "Nature",
+    icon: "🌿",
+    description: "Chansons sur la nature, les forêts et les montagnes",
+    songs: [
+      { title: "Scarborough Fair", artist: "Simon & Garfunkel", keywords: ["saugemary", "mountain"], keywordsFr: ["persil", "sauge"] },
+      { title: "Both Sides Now", artist: "Joni Mitchell", keywords: ["clouds"], keywordsFr: ["nuage", "cloud"] },
+      { title: "Down to Earth", artist: "Peter Gabriel", keywords: ["earth"], keywordsFr: ["terre"] },
+      { title: "Le Temps des fleurs", artist: "Dalida", keywords: ["fleurs"], keywordsFr: ["fleur", "flower"] }
     ]
   }
 ];
