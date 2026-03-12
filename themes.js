@@ -167,18 +167,17 @@ const THEMES = [
       { title: "Light My Fire", artist: "The Doors", keywords: ["light"], keywordsFr: ["lumiere", "feu"] },
       { title: "Firestarter", artist: "The Prodigy", keywords: ["firestarter", "starter"], keywordsFr: ["allumer"] }
     ]
-  }, // Done until here
+  },
   {
-    id: "roads",
-    title: "Roads & Travel",
+    id: "travel",
+    title: "Travel",
     icon: "🚗",
     description: "Songs about travelling and the open road",
     songs: [
-      { title: "Life Is a Highway", artist: "Tom Cochrane", keywords: ["highway", "life"], keywordsFr: ["autoroute", "vie"] },
+      { title: "Vacation", artist: "The Go-Go's", keywords: ["vacation"], keywordsFr: ["vacances"] },
+      { title: "Leaving On A Jet Plane", artist: "Peter, Paul, and Mary", keywords: ["jet plane", "jet"], keywordsFr: ["avion", "reaction"] },
       { title: "Road to Hell", artist: "Chris Rea", keywords: ["road to hell", "road"], keywordsFr: ["route", "enfer"] },
-      { title: "Fast Car", artist: "Tracy Chapman", keywords: ["fast car", "car"], keywordsFr: ["voiture", "rapide"] },
-      { title: "On the Road Again", artist: "Willie Nelson", keywords: ["again", "on the road"], keywordsFr: ["encore", "route"] },
-      { title: "Drive", artist: "The Cars", keywords: ["drive", "the cars"], keywordsFr: ["conduire"] },
+      { title: "Nightcall", artist: "Kavinsky", keywords: ["Drive", "ryan gosling"], keywordsFr: ["conduire"] },
       { title: "Highway to Hell", artist: "AC/DC", keywords: ["highway to hell", "highway"], keywordsFr: ["autoroute", "enfer"] }
     ]
   },
@@ -188,13 +187,12 @@ const THEMES = [
     icon: "💰",
     description: "Songs about money and wealth",
     songs: [
-      { title: "Material Girl", artist: "Madonna", keywords: ["material"], keywordsFr: ["materiel"] },
-      { title: "Can't Buy Me Love", artist: "The Beatles", keywords: ["buy me love", "beatles"], keywordsFr: ["acheter", "amour"] },
+      { title: "Material Girl", artist: "Madonna", keywords: ["material", "material girl"], keywordsFr: ["materiel", "materialiste"] },
+      { title: "Can't Buy Me Love", artist: "The Beatles", keywords: ["buy me love", "buy love"], keywordsFr: ["acheter", "amour"] },
       { title: "Rich Girl", artist: "Hall & Oates", keywords: ["rich girl"], keywordsFr: ["riche", "fille"] },
-      { title: "Gold Digger", artist: "Kanye West", keywords: ["gold digger"], keywordsFr: ["or", "chercheur"] },
-      { title: "Mo Money Mo Problems", artist: "Notorious B.I.G.", keywords: ["mo money", "problems"], keywordsFr: ["plus d'argent", "problemes"] },
-      { title: "Bills Bills Bills", artist: "Destiny's Child", keywords: ["bills"], keywordsFr: ["factures", "billets"] },
-      { title: "Price Tag", artist: "Jessie J", keywords: ["price tag"], keywordsFr: ["prix", "etiquette"] }
+      { title: "Gold Digger", artist: "Kanye West", keywords: ["gold digger", "gold", "digger"], keywordsFr: ["or", "chercheuse"] },
+      { title: "Mo Money Mo Problems", artist: "Notorious B.I.G.", keywords: ["mo money", "more money", "problem"], keywordsFr: ["plus d'argent", "problemes"] },
+      { title: "Bills Bills Bills", artist: "Destiny's Child", keywords: ["bills"], keywordsFr: ["factures", "billets"] }
     ]
   },
   {
@@ -203,8 +201,9 @@ const THEMES = [
     icon: "☮️",
     description: "Songs about war, peace and conflict",
     songs: [
+      { title: "Hymn To The Fallen", artist: "Katherine Jenkins", keywords: ["saving", "private", "ryan"], keywordsFr: ["sauver", "soldat"] },
+      { title: "The Imitation Game", artist: "Alexandre Desplat", keywords: ["imitation", "game", "enigma", "turing"], keywordsFr: ["cumberbatch"] },
       { title: "Give Peace a Chance", artist: "John Lennon", keywords: ["peace"], keywordsFr: ["paix"] },
-      { title: "The Unknown Soldier", artist: "The Doors", keywords: ["unknown soldier"], keywordsFr: ["soldat inconnu", "soldat"] },
       { title: "Brothers in Arms", artist: "Dire Straits", keywords: ["brothers", "arms"], keywordsFr: ["freres", "armes"] },
       { title: "Imagine", artist: "John Lennon", keywords: ["peace"], keywordsFr: ["paix"] }
     ]
@@ -215,13 +214,11 @@ const THEMES = [
     icon: "👻",
     description: "Songs about ghosts, magic and the supernatural",
     songs: [
-      { title: "Ghostbusters", artist: "Ray Parker Jr.", keywords: ["ghosts", "ghostbusters"], keywordsFr: ["fantomes"] },
-      { title: "Thriller", artist: "Michael Jackson", keywords: ["werewolf", "zombie", "undead"], keywordsFr: ["loup", "garou"] },
-      { title: "Witchy Woman", artist: "Eagles", keywords: ["witchy", "witch"], keywordsFr: ["sorciere"] },
-      { title: "Black Magic Woman", artist: "Santana", keywords: ["black magic", "witch"], keywordsFr: ["magie noire", "sorciere"] },
-      { title: "Monster Mash", artist: "Bobby Pickett", keywords: ["monster mash"], keywordsFr: ["monstre"] },
       { title: "Season of the Witch", artist: "Donovan", keywords: ["witch"], keywordsFr: ["sorciere"] },
-      { title: "Superstition", artist: "Stevie Wonder", keywords: ["superstition"], keywordsFr: ["superstition"] }
+      { title: "Thriller", artist: "Michael Jackson", keywords: ["werewolf", "zombie", "undead"], keywordsFr: ["loup", "garou"] },
+      { title: "Ghostbusters", artist: "Ray Parker Jr.", keywords: ["ghost", "ghostbusters"], keywordsFr: ["fantome"] },
+      { title: "Black Magic Woman", artist: "Santana", keywords: ["black magic", "witch"], keywordsFr: ["magie noire", "sorciere"] },
+      { title: "Superstition", artist: "Stevie Wonder", keywords: ["superstition"], keywordsFr: [] }
     ]
   },
   {
@@ -231,13 +228,10 @@ const THEMES = [
     description: "Songs with an instrument in the title",
     songs: [
       { title: "Piano Man", artist: "Billy Joel", keywords: ["piano"], keywordsFr: [] },
-      { title: "Johnny B. Goode", artist: "Chuck Berry", keywords: ["guitar", "chuck berry"], keywordsFr: ["guitare"] },
-      { title: "Trumpet Tune", artist: "Henry Purcell", keywords: ["trumpet"], keywordsFr: ["trompette"] },
-      { title: "Tubular Bells", artist: "Mike Oldfield", keywords: ["tubular bells", "oldfield"], keywordsFr: ["cloches"] },
-      { title: "Drums", artist: "Marc Moulin", keywords: ["drums"], keywordsFr: ["batterie", "tambour"] },
-      { title: "The Violin", artist: "Haiku Hands", keywords: ["violin"], keywordsFr: ["violon"] },
-      { title: "Bass", artist: "Spoon", keywords: ["bass"], keywordsFr: ["basse"] },
-      { title: "Harpsichord", artist: "Couperin", keywords: ["harpsichord"], keywordsFr: ["clavecin"] }
+      { title: "Tubular Bells", artist: "Mike Oldfield", keywords: ["tubular", "bell"], keywordsFr: ["cloche"] },
+      { title: "Funky Drummer - Pt. 1 & 2", artist: "James Brown", keywords: ["drums"], keywordsFr: ["batterie", "tambour"] },
+      { title: "Hells Bells", artist: "AC/DC", keywords: ["Hells Bells", "bell"], keywordsFr: ["cloche"] },
+      { title: "Eruption (2015 Remaster)", artist: "Van Halen", keywords: ["guitar"], keywordsFr: ["guitare"] }
     ]
   },
   {
@@ -247,13 +241,11 @@ const THEMES = [
     description: "Songs named after an emotion",
     songs: [
       { title: "Happy", artist: "Pharrell Williams", keywords: ["happy"], keywordsFr: ["heureux", "heureuse", "bonheur"] },
-      { title: "Creep", artist: "Radiohead", keywords: ["creep"], keywordsFr: ["rampant", "effrayant", "angoissant"] },
-      { title: "Mad World", artist: "Tears for Fears", keywords: ["mad"], keywordsFr: ["fou"] },
-      { title: "Hurt", artist: "Nine Inch Nails", keywords: ["hurt"], keywordsFr: ["blesse", "douleur"] },
+      { title: "Mad World", artist: "Michael Andrews", keywords: ["mad"], keywordsFr: ["fou"] },
+      { title: "Hurt", artist: "Johnny Cash", keywords: ["hurt"], keywordsFr: ["blesse", "douleur"] },
       { title: "Angry", artist: "The Rolling Stones", keywords: ["angry"], keywordsFr: ["enerve", "colere"] },
       { title: "Fear of the Dark", artist: "Iron Maiden", keywords: ["fear"], keywordsFr: ["peur", "appeure"] },
-      { title: "Jealous Guy", artist: "John Lennon", keywords: ["jealous"], keywordsFr: ["jaloux"] },
-      { title: "Desire", artist: "U2", keywords: ["desire"], keywordsFr: ["desir"] }
+      { title: "Jealous Guy", artist: "John Lennon", keywords: ["jealous"], keywordsFr: ["jaloux"] }
     ]
   }
 ];
